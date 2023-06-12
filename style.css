@@ -1,155 +1,139 @@
 body {
-    background: #25313e;
-    color: #fff;
-    font-family: Menlo, Monaco, "Consolas", "Courier New", "Courier";
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 1.5;
-    padding-top: 2rem;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  font-family: "Courier New", Courier, monospace;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  padding: 20px;
+  max-width: 1000px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  margin: 50px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+li {
+  margin: 0 10px;
+}
+
+.logo {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.logo img {
+  width: 150px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
+}
+
+.projects {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-card {
+  width: calc(33.33% - 60px);
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  margin: 0 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.project-description {
+  font-size: 14px;
+  margin-bottom: auto;
+  text-align: left;
+}
+
+.project-button {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.project-button a {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #FFD700;
+  color: #1a1a1a;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.project-button a:hover {
+  background-color: #FFC107;
+}
+
+.social-icons {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.social-icons i {
+  font-size: 24px;
+  margin: 0 10px;
+  color: #FFD700;
+}
+
+@media screen and (max-width: 768px) {
+  .logo img {
+      width: 100px;
   }
-  
-  footer {
-    text-align: center;
+
+  .projects {
+      flex-direction: column;
+      align-items: center;
   }
-  img.logo {
-    width: 300px;
-    height: auto;
+
+  .project-card {
+      width: 85%;
+      margin: 10px;
   }
-  footer small {
-    color: #506479;
-    font-size: 0.9rem;
+
+  .project-title {
+      font-size: 16px;
   }
-  
-  h1 {
-    color: #506479;
-    font-size: 2.4rem;
-    text-align: center;
-    letter-spacing: 0.3rem;
-    text-transform: uppercase;
-    margin-bottom: 1rem;
-    line-height: 1;
+
+  .project-description {
+      font-size: 12px;
   }
-  
-  p {
-    text-align: center;
-    margin-bottom: 2rem;
-  }
-  
-  a {
-    color: #fff;
-  }
-  
-  .window {
-    width: 80%;
-    margin: 0 auto 2rem;
-    box-shadow: 0 0.25rem 0.5rem #12181e;
-    border-radius: 0 0 0.1rem 0.1rem;
-  }
-  
-  .bar {
-    background: #191919;
-    height: 36px;
-    border-radius: 0.5rem 0.5rem 0 0;
-  }
-  
-  .btn::before, .btn::after, .btn {
-    width: 12px;
-    height: 12px;
-    border-radius: 100%;
-    display: block;
-  }
-  
-  .btn {
-    background: #f6b73e;
-    position: relative;
-    margin-left: 38px;
-    top: 12px;
-  }
-  .btn::before, .btn::after {
-    content: " ";
-    position: absolute;
-  }
-  .btn::before {
-    background: #f55551;
-    margin-left: -20px;
-  }
-  .btn::after {
-    background: #32c146;
-    margin-left: 20px;
-  }
-  
-  .body {
-    background: #232323;
-    padding: 18px;
-  }
-  .body pre {
-    margin: 0;
-  }
-  .body .pulse {
-    -webkit-animation: pulse 1s ease-in-out infinite;
-    -moz-animation: pulse 1s ease-in-out infinite;
-    animation: pulse 1s ease-in-out infinite;
-  }
-  
-  @-webkit-keyframes pulse {
-    0% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-    }
-  }
-  @-moz-keyframes pulse {
-    0% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-    }
-  }
-  @keyframes pulse {
-    0% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-    }
-  }
-  .command {
-    color: #32c146;
-  }
-  
-  .comment {
-    opacity: 0.5;
-  }
-  
-  /*=====Mobile=====*/
-  @media (max-width: 991px) {
-    body {
-      font-size: 25pt;
-      padding: 30px;
-    }
-  
-    img.logo {
-      width: 500px;
-    }
-    .window {
-      width: 90%;
-    }
-    .bar {
-      height: 50px;
-    }
-    .btn::before, .btn::after, .btn {
-      width: 20px;
-      height: 20px;
-    }
-  }
+}
