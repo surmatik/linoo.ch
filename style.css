@@ -115,6 +115,10 @@ li {
 }
 
 @media screen and (max-width: 768px) {
+  .container {
+    margin: 20px;
+  }
+
   .logo img {
       width: 100px;
   }
