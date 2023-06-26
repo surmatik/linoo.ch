@@ -64,7 +64,7 @@ li {
   background-color: rgba(255, 255, 255, 0.1);
   padding: 20px;
   margin-bottom: 20px;
-  margin: 0 10px;
+  margin: 10px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -130,6 +130,7 @@ li {
   .project-card {
       width: 85%;
       margin: 10px;
+      margin-bottom: 30px;
   }
 
   .project-title {
