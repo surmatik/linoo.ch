@@ -1,0 +1,26 @@
+<header>
+    <div class="page-header">
+        <div class="logo">
+            <p>Lino</p>
+        </div>
+    
+        <a id="menu-icon" class="menu-icon" onclick="onMenuClick()">
+            <i class="fa fa-bars"></i>
+        </a>
+    
+        <div id="navigation-bar" class="nav-bar">
+            <a href="/"">Home</a>
+            <a href="/blog">Blog</a>
+            <a href="#">Photoslino</a>
+        </div>
+    </div>
+    
+    <script>
+        function onMenuClick() {
+            var navbar = document.getElementById("navigation-bar");
+            var responsive_class_name = "responsive";
+    
+            navbar.classList.toggle(responsive_class_name);
+        }
+    </script>
+</header>

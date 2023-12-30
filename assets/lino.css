@@ -1,0 +1,137 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: rgb(24, 24, 31);
+    color: #e66fe9;
+    margin: 0;
+    padding: 0;
+    max-width: 900px;
+    margin: auto;
+    padding: 10px;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    
+}
+
+h1,
+h2,
+h3,
+p {
+    color: white;
+}
+
+p {
+    font-weight: 300;
+    font-size: 16px;
+}
+
+/*===Header===*/
+header {
+    margin-bottom: 30px;
+}
+.page-header {
+    padding: 1.3rem;
+    display: flex;
+    justify-content: space-between;
+}
+.logo p {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 800;
+    transition: 0.5s;
+}
+.nav-bar {
+    display: flex;
+    align-items: center;
+}
+.nav-bar a {
+    color: white;
+    padding: 1.5rem;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 800;
+    transition: 0.5s;
+}
+.logo p:hover, .nav-bar a:hover {
+    color: #6f85e9;
+}
+.menu-icon {
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+@media screen and (max-width: 700px) {
+    .nav-bar {
+      display: none;
+      position: absolute;
+      top: 3.7rem;
+      left: 0;
+      width: 100%;
+      background-color: #fff
+      text-align: center;
+    }
+    .nav-bar.responsive {
+      display: block;
+    }
+    .nav-bar a {
+      display: block;
+    }
+    .menu-icon {
+      display: block;
+      z-index: 1;
+    }
+    .logo {
+      font-size: 1.4rem;
+    }
+  }
+
+
+/*===Home===*/
+.top,
+.projects,
+.blog {
+    margin-bottom: 100px;
+}
+
+.top {
+    text-align: center;
+}
+
+.top img.logo {
+    width: 200px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
+    transition: 0.5s;
+}
+
+.top img.logo:hover {
+    width: 210px;
+}
+
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.project {
+    background-color: #2b2b2b;
+    padding: 15px;
+    border-radius: 15px;
+    margin: 10px;
+}
+.project:hover {
+    background-color: #3b3b3b;
+    transition: 0.5s;
+}
+h3.project-title {
+    color: #6f85e9;
+}
+.projects .project .links a i{
+    color: #6f85e9;
+}

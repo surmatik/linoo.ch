@@ -1,0 +1,67 @@
+---
+layout: default
+---
+
+<div class="top">
+    <img src="assets/img/lino.jpg" class="logo">        
+    
+    <h1>Lino - Surmatik</h1>
+    <p>Hey, I'm Lino ✌️</p>    
+</div>
+
+<div class="projects">
+    <div class="project">
+        <h3 class="project-title">Cevi Wetzikon Pool Tool<h3>
+        <p>Nuddle / Doodle alternative for the Cevi Wetzikon</p>
+        <div class="links">
+            <a href=""><i class="fab fa-github"></i></a>
+            <a href=""><i class="fas fa-globe"></i></a>
+        </div>
+    </div>
+    <div class="project">
+        <h3 class="project-title">Webcam Weissenberge<h3>
+        <p>Personal website which always shows the current view and temperature from the Weissenberge</p>
+        <div class="links">
+            <a href=""><i class="fab fa-github"></i></a>
+            <a href=""><i class="fas fa-globe"></i></a>
+        </div>
+    </div>
+    <div class="project">
+        <h3 class="project-title">Online Shop Typisch Ich<h3>
+        <p>Wordpress / WooCommerce website for the online shop from Typisch Ich.</p>
+        <div class="links">
+            <a href=""><i class="fab fa-github"></i></a>
+            <a href=""><i class="fas fa-globe"></i></a>
+        </div>
+    </div>
+    <div class="project">
+        <h3 class="project-title">Typisch Ich Motive Collage Generator<h3>
+        <p>WebApp which creates collages for the product images of Typically Me.</p>
+        <div class="links">
+            <a href=""><i class="fab fa-github"></i></a>
+            <a href=""><i class="fas fa-globe"></i></a>
+        </div>
+    </div>
+    <div class="project">
+        <h3 class="project-title">GPS-Fangis<h3>
+        <p>GPS-based catching game by tracking the players.</p>
+        <div class="links">
+            <a href=""><i class="fab fa-github"></i></a>
+            <a href=""><i class="fas fa-globe"></i></a>
+        </div>
+    </div>
+</div>
+
+<div class="blog">
+    <div class="blog-posts">
+        <h2>Blogbeiträge</h2>
+        <ul>
+            {% for post in site.posts %}
+            <li>
+                <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+                <p>{{ post.excerpt }}</p>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
